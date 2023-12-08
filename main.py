@@ -500,14 +500,18 @@ def hadi(usernames):
     try:
         username_counts = Counter(usernames)
         most_common_usernames = username_counts.most_common(3)
-        for name, count in most_common_usernames:
-            ii = bot.get_chat_info(name)['user']
+        for i, (username, count) in enumerate(most_common_usernames):
+            ii = bot.get_chat_info(username)['user']
             h = ii['first_name']
-            hep = f"""{hep} user@@  {h} @@({name}) <==> {count} Message \n\n """
-    except:pass
-    bot.send_text(
-    m.object_guid
-    ,f"""تعداد پیام ها در ۲۴ ساعت اخیر 
+            if i == 0:
+                hep += f"🔩 user @@ {h} @@({username}) <==> {count} Message \n\n "
+            elif i == 1:
+                hep += f"🩷 user @@ {h} @@({username}) <==> {count} Message \n\n "
+            elif i == 2:
+                hep += f"🙆‍♀ user @@ {h} @@({username}) <==> {count} Message \n\n "
+    except:
+        pass
+    m.reply(f"""تعداد پیام ها در ۲۴ ساعت اخیر 
 {hep}
 
 
@@ -515,9 +519,7 @@ def hadi(usernames):
 افرادی که ریمو شدن = {rimo}
 افرادی که لف دادن = {lef}
 افرادی که عضو شدن = {jon}
-""",
-m.message_id
-)
+""")
 
 def send(m,Fuck):
 	try:
