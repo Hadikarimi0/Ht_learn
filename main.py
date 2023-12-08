@@ -495,11 +495,6 @@ def up_qavanin(m):
 	else:
 		m.reply("شما ادمین نیستید")
 
-
-usernames = []
-
-usernames = []
-
 def hadi(usernames):
     hep = ''
     try:
