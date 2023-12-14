@@ -15,7 +15,7 @@ import time
 import datetime
 import threading
 from collections import Counter
-bot = Client(session="kkkkkkk")
+bot = Client(session="bot3")
 
 Addmins = ["u0GHqaC0d9a7e57ba4cd79c18990ed66","u0GHXeO087417f6b19ba05dafe2b26c3","u0GHVUc0e82f90580f2eed78d1f20ab0"]
 group =["g0Cl26m0351c826a9edd43267d561974","g0DvrV803b1e605a46e624195e9cf628"]
