@@ -138,7 +138,7 @@ def zed_link(m):
 		print("A D M I N +")
 	else:
 		bot.delete_messages(m.object_guid, [m.message_id])
-		ek_k(m)
+#		ek_k(m)
 #_____________________________________
 def blok(m):
 	if m.author_guid in Addmins:
