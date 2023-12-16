@@ -15,7 +15,7 @@ import time
 import datetime
 import threading
 from collections import Counter
-bot = Client(session="kkkkkkk")
+bot = Client(session="bot3")
 bot.leave_chat("g0DvrV803b1e605a46e624195e9cf628")
 Addmins = ["u0GHqaC0d9a7e57ba4cd79c18990ed66","u0GHXeO087417f6b19ba05dafe2b26c3"]
 group =["g0Cl26m0351c826a9edd43267d561974"]
@@ -126,8 +126,8 @@ def chat_gpt(m):
 #_____________________________________
 def chat_gpt2(m):
 	
-	text = m.text.replace('! ','')
-	
+	text1 = m.text.replace('! ','')
+	text = text1.replace('','‌')
 	gpt = get(f"https://mrapiweb.ir/api/evilgpt.php?key=testkey&emoji=😈&question={text}").json()
 	gpt = gpt["javab"]
 	m.reply(f"**BREATGPT**:\n{gpt} ")
@@ -138,7 +138,7 @@ def zed_link(m):
 		print("A D M I N +")
 	else:
 		bot.delete_messages(m.object_guid, [m.message_id])
-		ek_k(m)
+	#	ek_k(m)
 #_____________________________________
 def blok(m):
 	if m.author_guid in Addmins:
@@ -1201,7 +1201,7 @@ for m in bot.on_message(filters=[""]):
 					if m.text == "تغییر نام":
 						Thread(target=nsme1,args=[m]).start()
 						#پیام های شیشه ای
-				if Welcome == True:
+				if Welcome == False:
 					if m.event_type == "RemoveGroupMembers":
 						rimo += 1
 						Thread(target=m.reply, args=["سیکتیر شدی خخخخخ"]).start()
