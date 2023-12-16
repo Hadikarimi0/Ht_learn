@@ -973,7 +973,7 @@ def mosavi(name,m):
 for m in bot.on_message(filters=[""]):	
 	try:
 
-		print(m.text)
+		#print(m.text)
 		word = m.text
 		textt = word
 		title = m.author_title
