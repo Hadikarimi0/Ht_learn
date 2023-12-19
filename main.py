@@ -1201,7 +1201,7 @@ for m in bot.on_message(filters=[""]):
 					if m.text == "تغییر نام":
 						Thread(target=nsme1,args=[m]).start()
 						#پیام های شیشه ای
-				if Welcome == False:
+				if Welcome == True:
 					if m.event_type == "RemoveGroupMembers":
 						rimo += 1
 						Thread(target=m.reply, args=["سیکتیر شدی خخخخخ"]).start()
