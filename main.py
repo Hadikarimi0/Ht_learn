@@ -15,7 +15,7 @@ import time
 import datetime
 import threading
 from collections import Counter
-bot = Client(session="kkkkkkk")
+bot = Client(session="bot3")
 #h = bot.join_chat("https://rubika.ir/joing/FBDAJIJB0CAMXXYDLCVZAHNMHRYIBIAX")['group']['group_guid']
 #print(h)
 
