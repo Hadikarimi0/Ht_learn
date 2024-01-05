@@ -20,7 +20,7 @@ bot = Client(session="bot3")
 #print(h)
 
 Addmins = ["u0GHqaC0d9a7e57ba4cd79c18990ed66","u0GHXeO087417f6b19ba05dafe2b26c3"]
-group =["g0Cl26m0351c826a9edd43267d561974","g0DiDQl0f149fdbc0d3eb2805265424b"]
+group =["g0Cl26m0351c826a9edd43267d561974","g0EDI48001beaaedde70057d0984a716"]
 upload = "HT_USERNAME"
 guid = bot.get_chat_info_by_username(upload)['channel']['channel_guid']
 guid_hadi = "u0GHXeO087417f6b19ba05dafe2b26c3"
