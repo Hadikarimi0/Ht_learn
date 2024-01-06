@@ -1284,7 +1284,7 @@ for m in bot.on_message(filters=[""]):
 						Thread(target=start_game,args=[m]).start()
 					if m.text in ['/left', '/Left','لفت','توقف']:
 						data = read_data()
-						if m.author_guid in data[m.object_guid]['players']:
+						if m.author_guid in data[m.object_guid]['players'] or Addmins:
 							data.clear()
 							m.reply("بازی متوقف شد.")
 					if m.text in ['/join', '/Join', 'join', 'Join', 'جوین']:
