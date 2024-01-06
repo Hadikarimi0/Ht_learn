@@ -1383,8 +1383,8 @@ for m in bot.on_message(filters=[""]):
 						Thread(target=two,args=[m]).start()
 					elif m.text.startswith("بده") or m.text.startswith("بیده") or m.text.startswith("نمیدی") or m.text.startswith("بیدا"):
 						Thread(target=three,args=[m]).start()
-					elif m.text.startswith("🤣") or m.text.startswith("🤣🤣") or m.text.startswith("😂"):
-						Thread(target=four,args=[m]).start()
+					#elif m.text.startswith("🤣") or m.text.startswith("🤣🤣") or m.text.startswith("😂"):
+						#Thread(target=four,args=[m]).start()
 					if m.text == "وضعیت من" or m.text == "وضعیت":
 						Thread(target=VAZEAT,args=[m]).start()
 	except:pass
