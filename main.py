@@ -1004,7 +1004,7 @@ for m in bot.on_message(filters=[""]):
 				usernames.append(name)
 				
 				
-				if zed__link == True:
+				if zed__link == False:
 					if name in de:
 						Thread(target=dol,args=[m]).start()
 					if m.is_forward == True:
