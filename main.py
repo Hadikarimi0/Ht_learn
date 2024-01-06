@@ -181,14 +181,14 @@ def laghab(m):
 #____________________________________
 def snajagh(m):
 	j = bot.get_admin_members(m.object_guid,just_get_guids=True)
-	if m.author_guid in j or Addmins:
+	if m.author_guid in j:
 		hh = m.reply_message_id
 		bot.pin_message(m.object_guid, hh)
 		bot.send_text(m.object_guid, "پیام با موفقیت سنجاق شد.", hh)
 #_______________________________________
 def unsnajagh(m):
 	j = bot.get_admin_members(m.object_guid,just_get_guids=True)
-	if m.author_guid in j or Addmins:
+	if m.author_guid in j:
 		hh = m.reply_message_id
 		bot.unpin_message(m.object_guid, hh)
 		bot.send_text(m.object_guid, "پیام با موفقیت سنجاق شد.", hh)
