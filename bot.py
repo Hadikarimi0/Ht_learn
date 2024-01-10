@@ -5,7 +5,7 @@ bot = Client(session="bot2")
 mahrom = []
 admin = ("u0GHqaC0d9a7e57ba4cd79c18990ed66","u0F6ccd0cf261acdf907bdf9d1d922cd")
 on_off = True
-guid = 'g0EDI48001beaaedde70057d0984a716'
+guid = 'g0EEISJ0e87252af54d2c1aa957d9f11'
 shoabe = []
 for m in bot.on_message(filters=[""]):
 	if m.object_guid == guid:
