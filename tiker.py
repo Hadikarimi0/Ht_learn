@@ -1,5 +1,4 @@
-import  os
-os.system("pip install rubpy==6.4.6")
+
 from rubpy.sync import Client
 from time import sleep
 
