@@ -16,7 +16,6 @@
 
 # bot = Client("Hadi_taker")
 
-Number = 4
 if Number == 1:
 
     with bot:
