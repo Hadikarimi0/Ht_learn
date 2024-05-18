@@ -16,12 +16,14 @@
 
 # bot = Client("Hadi_taker")
 
+# Number = 4
 if Number == 1:
 
     with bot:
         while 1:
             result = bot.update_channel_username(channel_guid=guid, username=user)
             print(result)
+            sleep(tim)
 elif Number == 2:
 
     with bot:
@@ -29,6 +31,7 @@ elif Number == 2:
             h1 = bot.update_channel_username(channel_guid=guid, username=user)
             h2 = bot.update_channel_username(channel_guid=guid2, username=user2)
             print(h1, h2)
+            sleep(tim)
 elif Number == 3:
 
     with bot:
@@ -37,6 +40,7 @@ elif Number == 3:
             h2 = bot.update_channel_username(channel_guid=guid2, username=user2)
             h3 = bot.update_channel_username(channel_guid=guid3, username=user3)
             print(h1, h2, h3)
+            sleep(tim)
 elif Number == 4:
 
     with bot:
@@ -46,6 +50,7 @@ elif Number == 4:
             h3 = bot.update_channel_username(channel_guid=guid3, username=user3)
             h4 = bot.update_channel_username(channel_guid=guid4, username=user4)
             print(h1, h2, h3, h4)
+            sleep(tim)
 else:
     print(
         """pleease write 1 or 4 in number
